@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Василий Москаев](https://up.htmlacademy.ru/adaptive/12/user/138689).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Старшинов](https://htmlacademy.ru/profile/id100874).
 
 ---
 
