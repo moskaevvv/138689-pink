@@ -2,11 +2,210 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Мобильное приложение «Пинк»</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="logo logo--short logo--light" href="#">
+        <img class="page-header__logo-img" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Пинк»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photos.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="academy.html">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="hero hero--index">
+        <h1 class="visually-hidden">Мобильное приложение «Пинк» — Взгляните на жизнь иначе</h1>
+        <div class="download">
+          <button class="button button--white">Скачать приложение</button>
+          <ul class="download__mobile-platforms">
+            <li class="download__item">
+              <a class="download__platform download__platform--ios" href="https://itunes.apple.com/ru/genre/ios">App Store</a>
+            </li>
+            <li class="download__item">
+              <a class="download__platform download__platform--android" href="https://play.google.com/store/apps">Play Market</a>
+            </li>
+            <li class="download__item">
+              <a class="download__platform download__platform--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Microsoft Marketplace</a>
+            </li>
+          </ul>
+          <p class="download__about">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
+      <section class="information">
+        <h2 class="information__string">
+          Устали от серости мегаполиса?
+        </h2>
+        <p class="information__string">
+          Нам есть, что вам предложить!
+        </p>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">
+          Что умеет «Пинк»?
+        </h2>
+        <ul class="advantages__list">
+          <li class="paragraph">
+            <header class="paragraph__header">
+              Поднимает настроение
+            </header>
+            <p class="paragraph__text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="paragraph">
+            <header class="paragraph__header">
+              Меняет мир вокруг
+            </header>
+            <p class="paragraph__text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="paragraph">
+            <header class="paragraph__header">
+              Заводит новых друзей
+            </header>
+            <p class="paragraph__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <div class="advantages__pic">
+          <img class="advantages__pic-img" src="http://placehold.it/137x320" width="137" height="320" alt="Экран приложения «Пинк»">
+        </div>
+      </section>
+      <section class="testimonials slider">
+        <h2 class="visually-hidden">
+          Отзывы пользователей
+        </h2>
+        <blockquote class="paragraph">
+          <header class="paragraph__header">
+            Николай Петров
+          </header>
+          <p class="paragraph__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <ul class="slider__dots">
+          <li class="slider__dot slider__dot--active">Отзыв #1</li>
+          <li class="slider__dot">Отзыв #2</li>
+          <li class="slider__dot">Отзыв #3</li>
+        </ul>
+      </section>
+      <section class="pricing slider">
+        <h2 class="visually-hidden">
+          Тарифы
+        </h2>
+        <table class="pricing__table pricing__table--center">
+          <tr>
+            <th class="pricing__tariff">
+              <b class="pricing__title">Unknown</b>
+              <span class="pricing__price">0,00 USD</span>
+            </th>
+            <th class="pricing__tariff pricing__tariff--hit">
+              <b class="pricing__title">Стандарт</b>
+              <span class="pricing__price">3,99 USD</span>
+            </th>
+            <th class="pricing__tariff">
+              <b class="pricing__title">Unknown</b>
+              <span class="pricing__price">0,00 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="pricing__option">
+              Unknown option
+            </td>
+            <td class="pricing__option">
+              Розовый фильтр
+            </td>
+            <td class="pricing__option">
+              Unknown option
+            </td>
+          </tr>
+          <tr>
+            <td class="pricing__option pricing__option--off">
+              Unknown option
+            </td>
+            <td class="pricing__option">
+              Смайлики
+            </td>
+            <td class="pricing__option">
+              Unknown option
+            </td>
+          </tr>
+          <tr>
+            <td class="pricing__option pricing__option--off">
+              Unknown option
+            </td>
+            <td class="pricing__option pricing__option--off">
+              Комментарии
+            </td>
+            <td class="pricing__option">
+              Unknown option
+            </td>
+          </tr>
+        </table>
+        <ul class="slider__dots">
+          <li class="slider__dot">Тариф #1</li>
+          <li class="slider__dot slider__dot--active">Тариф #2</li>
+          <li class="slider__dot">Тариф #3</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer page-footer--on-index">
+      <section class="page-footer__contacts">
+        <h2 class="information__string">
+            Остались вопросы?<br>Свяжитесь с нами!
+        </h2>
+        <p class="information__string">
+          <b class="paragraph__header">
+            Звоните:
+          </b>
+          <span class="big-text big-text--red">
+            +7 (812) 555-66-66
+          </span>
+        </p>
+        <p class="information__string">
+          <b class="paragraph__header">
+            Пишите:
+          </b>
+          <a class="big-text big-text--red" href="mailto:mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </p>
+        <p class="information__string">
+          <b class="paragraph__header">
+            Приезжайте в гости:
+          </b>
+          <span class="big-text big-text--red">
+            ул. Большая Конюшенная, 19/8
+          </span>
+        </p>
+      </section>
+      <section class="map">
+        <i class="page-map__pin">
+          Наш офис здесь
+        </i>
+        <img class="map__img" src="http://placehold.it/320x200" width="320" height="200" alt="Карта проезда">
+      </section>
+    </footer>
   </body>
 </html>
