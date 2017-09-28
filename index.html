@@ -5,161 +5,182 @@
     <title>Мобильное приложение «Пинк»</title>
   </head>
   <body>
+    <!--Шапка/меню-->
     <header class="page-header">
-      <a class="logo logo--short logo--light" href="#">
+      <a class="page-header__logo" href="#">
         <img class="page-header__logo-img" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Пинк»">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+      <nav class="page-header">
+        <button class="page-header__toggle">Открыть меню</button>
+        <div class="page-header__menu-wrapper">
+          <ul class="page-header__list">
+            <li class="page-header__list-item page-header__list-item--active">
               <a>Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="photos.html">Фотографии</a>
+            <li class="page-header__list-item">
+              <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="page-header__list-item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="academy.html">HTML Academy</a>
+            <li class="page-header__list-item">
+              <a href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <section class="hero hero--index">
-        <h1 class="visually-hidden">Мобильное приложение «Пинк» — Взгляните на жизнь иначе</h1>
-        <div class="download">
+
+    <main class="page-content">
+      <!--Первый экран-->
+      <section class="hero">
+        <h1 class="visually-hidden">Взгляните на жизнь иначе</h1>
+        <figure class="hero__figure">
+          <img class="hero__figure-img" src="http://placehold.it/320x314" width="320" height="314" alt="Приложение «Пинк» в умелых руках">
+        </figure>
+        <div class="hero__download-wrapper">
           <button class="button button--white">Скачать приложение</button>
-          <ul class="download__mobile-platforms">
-            <li class="download__item">
-              <a class="download__platform download__platform--ios" href="https://itunes.apple.com/ru/genre/ios">App Store</a>
+          <ul class="hero__platforms-list">
+            <li class="hero__platform">
+              <a class="hero__platform-link hero__platform-link--ios" href="https://itunes.apple.com/ru/genre/ios">App Store</a>
             </li>
-            <li class="download__item">
-              <a class="download__platform download__platform--android" href="https://play.google.com/store/apps">Play Market</a>
+            <li class="hero__platform">
+              <a class="hero__platform-linkhero__platform-link--android" href="https://play.google.com/store/apps">Play Market</a>
             </li>
-            <li class="download__item">
-              <a class="download__platform download__platform--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Microsoft Marketplace</a>
+            <li class="hero__platform">
+              <a class="hero__platform-link hero__platform-link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Microsoft Marketplace</a>
             </li>
           </ul>
-          <p class="download__about">
+          <p class="hero__about-platforms">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
         </div>
       </section>
-      <section class="information">
-        <h2 class="information__string">
+      <!--Введение-->
+      <section class="intro">
+        <h2 class="visually-hidden">Что происходит?</h1>
+        <p class="big-text">
           Устали от серости мегаполиса?
-        </h2>
-        <p class="information__string">
+        </p>
+        <p class="big-text">
           Нам есть, что вам предложить!
         </p>
       </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">
-          Что умеет «Пинк»?
-        </h2>
-        <ul class="advantages__list">
-          <li class="paragraph">
-            <header class="paragraph__header">
-              Поднимает настроение
-            </header>
-            <p class="paragraph__text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
+      <!--Что умеет «Пинк»-->
+      <section class="features">
+        <h2 class="visually-hidden">Что умеет «Пинк»?</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <div class="regular-text">
+              <h3 class="regular-text__title">
+                Поднимает настроение
+              </h3>
+              <p class="regular-text__paragraph">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+              </p>
+            </div>
           </li>
-          <li class="paragraph">
-            <header class="paragraph__header">
-              Меняет мир вокруг
-            </header>
-            <p class="paragraph__text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-            </p>
+          <li class="features__item">
+            <div class="regular-text">
+              <h3 class="regular-text__title">
+                Меняет мир вокруг
+              </h3>
+              <p class="regular-text__paragraph">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </div>
           </li>
-          <li class="paragraph">
-            <header class="paragraph__header">
-              Заводит новых друзей
-            </header>
-            <p class="paragraph__text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
+          <li class="features__item">
+            <div class="regular-text">
+              <h3 class="regular-text__title">
+                Заводит новых друзей
+              </h3>
+              <p class="regular-text__paragraph">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </div>
           </li>
         </ul>
-        <div class="advantages__pic">
-          <img class="advantages__pic-img" src="http://placehold.it/137x320" width="137" height="320" alt="Экран приложения «Пинк»">
-        </div>
+        <figure class="features__img-wrapper">
+          <img class="features__img" src="http://placehold.it/137x320" width="137" height="320" alt="Экран приложения «Пинк»">
+        </figure>
       </section>
+      <!--Отзывы-->
       <section class="testimonials slider">
         <h2 class="visually-hidden">
           Отзывы пользователей
         </h2>
-        <blockquote class="paragraph">
-          <header class="paragraph__header">
+        <div class="regular-text">
+          <div class="regular-text__title">
             Николай Петров
-          </header>
-          <p class="paragraph__text">
+          </div>
+          <p class="regular-text__paragraph">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
-        </blockquote>
+        </div>
         <ul class="slider__dots">
           <li class="slider__dot slider__dot--active">Отзыв #1</li>
           <li class="slider__dot">Отзыв #2</li>
           <li class="slider__dot">Отзыв #3</li>
         </ul>
       </section>
+      <!--Тарифы-->
       <section class="pricing slider">
         <h2 class="visually-hidden">
           Тарифы
         </h2>
-        <table class="pricing__table pricing__table--center">
+        <table class="pricing__tariffs">
           <tr>
             <th class="pricing__tariff">
-              <b class="pricing__title">Unknown</b>
-              <span class="pricing__price">0,00 USD</span>
+              <p class="pricing__tariff-title">
+              Unknown
+              <span class="pricing__tariff-price">0,00 USD</span>
+              </p>
             </th>
             <th class="pricing__tariff pricing__tariff--hit">
-              <b class="pricing__title">Стандарт</b>
-              <span class="pricing__price">3,99 USD</span>
+              <p class="pricing__tariff-title">
+              Стандарт
+              <span class="pricing__tariff-price">3,99 USD</span>
+              </p>
             </th>
             <th class="pricing__tariff">
-              <b class="pricing__title">Unknown</b>
-              <span class="pricing__price">0,00 USD</span>
+              <p class="pricing__tariff-title">
+              Unknown
+              <span class="pricing__tariff-price">0,00 USD</span>
+              </p>
             </th>
           </tr>
           <tr>
-            <td class="pricing__option">
-              Unknown option
+            <td class="pricing__tariff-feature">
+              Unknown feature
             </td>
-            <td class="pricing__option">
+            <td class="pricing__tariff-feature">
               Розовый фильтр
             </td>
-            <td class="pricing__option">
-              Unknown option
+            <td class="pricing__tariff-feature">
+              Unknown feature
             </td>
           </tr>
           <tr>
-            <td class="pricing__option pricing__option--off">
-              Unknown option
+            <td class="pricing__tariff-feature" pricing__tariff-feature--disabled>
+              Unknown feature
             </td>
-            <td class="pricing__option">
+            <td class="pricing__tariff-feature">
               Смайлики
             </td>
-            <td class="pricing__option">
-              Unknown option
+            <td class="pricing__tariff-feature">
+              Unknown feature
             </td>
           </tr>
           <tr>
-            <td class="pricing__option pricing__option--off">
-              Unknown option
+            <td class="pricing__tariff-feature pricing__tariff-feature--disabled">
+              Unknown feature
             </td>
-            <td class="pricing__option pricing__option--off">
+            <td class="pricing__tariff-feature pricing__tariff-feature--disabled">
               Комментарии
             </td>
-            <td class="pricing__option">
-              Unknown option
+            <td class="pricing__tariff-feature">
+              Unknown feature
             </td>
           </tr>
         </table>
@@ -170,42 +191,42 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer page-footer--on-index">
+
+    <footer class="page-footer">
+      <!--Контакты-->
       <section class="page-footer__contacts">
-        <h2 class="information__string">
-            Остались вопросы?<br>Свяжитесь с нами!
+        <h2 class="big-text">
+            Остались вопросы? Свяжитесь с нами!
         </h2>
-        <p class="information__string">
-          <b class="paragraph__header">
+        <p class="page-footer__contact">
+          <b class="page-footer__contact-title">
             Звоните:
           </b>
-          <span class="big-text big-text--red">
-            +7 (812) 555-66-66
-          </span>
+          +7 (812) 555-66-66
         </p>
-        <p class="information__string">
-          <b class="paragraph__header">
+        <p class="page-footer__contact">
+          <b class="page-footer__contact-title">
             Пишите:
           </b>
-          <a class="big-text big-text--red" href="mailto:mail@htmlacademy.ru">
+          <a class="page-footer__mail-link" href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru
           </a>
         </p>
-        <p class="information__string">
-          <b class="paragraph__header">
+        <p class="page-footer__contact">
+          <b class="page-footer__contact-title">
             Приезжайте в гости:
           </b>
-          <span class="big-text big-text--red">
             ул. Большая Конюшенная, 19/8
-          </span>
         </p>
       </section>
-      <section class="map">
-        <i class="page-map__pin">
+      <!--Карта-->
+      <section class="page-footer__map">
+        <div class="page-footer__map-pin">
           Наш офис здесь
-        </i>
-        <img class="map__img" src="http://placehold.it/320x200" width="320" height="200" alt="Карта проезда">
+        </div>
+        <img class="page-footer__map-img" src="http://placehold.it/320x200" width="320" height="200" alt="Карта проезда">
       </section>
+
     </footer>
   </body>
 </html>
