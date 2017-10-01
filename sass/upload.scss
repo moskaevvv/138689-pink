@@ -1,0 +1,22 @@
+.upload {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px 0 0;
+  &__tools {
+    margin: 40px auto 30px;
+  }
+  &__range {
+    margin-bottom: 30px;
+  }
+  &__buttons {
+    border-top: 1px solid rgba(40, 54, 69, 0.1);
+    padding: 38px 20px;
+  }
+  &__img-wrapper {
+    width: calc(100% - 40px);
+    padding: 0 20px 0;
+  }
+  &__img {
+    width: 100%;
+  }
+}

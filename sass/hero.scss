@@ -1,0 +1,35 @@
+.hero {
+  background-color: #1d2631;
+  color: #fff;
+  font-family: 'Open Sans Light', 'Arial', sans-serif;
+  text-align: center;
+  margin-top: -66px;
+  position: relative;
+  z-index: 1;
+  &__download-wrapper {
+    padding: 28px 19px;
+  }
+  &__about-platforms {
+    max-width: 250px;
+    margin: auto;
+  }
+  &__platforms-list {
+    margin: 30px auto;
+  }
+}
+
+.hero__wrapper {
+  background: #1d2631 url('../img/bg-back-mobile@1x.jpg') top center no-repeat;
+  background-size: cover;
+  min-height: 237px;
+  padding: 99px 0 25px;
+  box-sizing: border-box;
+  &--on-index {
+    min-height: 462px;
+  }
+  h1 {
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
