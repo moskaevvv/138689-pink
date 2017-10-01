@@ -1,20 +1,23 @@
 .regular-text {
   &__title {
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 16px;
     font-weight: normal;
   }
+
   &__paragraph {
     color: #283645;
   }
+
   &__subtitle {
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-weight: normal;
   }
+
   &__note {
-    font-family: 'Open Sans Light', 'Arial', sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
   }

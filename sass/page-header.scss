@@ -3,15 +3,18 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+
   &__list {
     text-align: center;
   }
+
   &__list-item {
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     border-bottom: 1px solid rgba(0, 0, 0, 1);
   }
+
   a {
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     color: white;
     text-decoration: none;
   }

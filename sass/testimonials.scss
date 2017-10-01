@@ -5,15 +5,18 @@
   background-color: white;
   text-align: center;
   padding: 48px 20px;
+
   &__item {
     margin-bottom: 25px;
   }
+
   &__name {
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 24px;
   }
+
   &__text {
     line-height: 30px;
     color: #283645;

@@ -3,6 +3,7 @@
   background-color: #f2f2f2;
   text-align: center;
   overflow: hidden;
+
   &__tariffs {
     border: 2px solid #e5e5e5;
     text-transform: uppercase;
@@ -13,6 +14,7 @@
     background-color: white;
     margin-bottom: 40px;
   }
+
   &__tariff {
     width: (100%/3);
     border: 2px solid #e5e5e5;
@@ -21,10 +23,11 @@
     background-color: #283645;
     padding: 16px 0 20px;
     color: white;
-    font-family: 'Open Sans Bold', 'Arial', sans-serif;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
   }
+
   &__tariff-feature {
     width: (100%/3);
     border: 2px solid #e5e5e5;
@@ -33,9 +36,10 @@
     color: #283645;
     line-height: 30px;
   }
-  &__tariff-price{
+
+  &__tariff-price {
     display: block;
-    font-family: 'Open Sans Light', 'Arial', sans-serif;
+    font-family: "Open Sans Light", "Arial", sans-serif;
     font-size: 24px;
     line-height: 30px;
     margin-top: 2px;
