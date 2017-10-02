@@ -1,0 +1,23 @@
+.listing {
+  padding: 0 20px;
+  &__item {
+    background-color: #f2f2f2;
+  }
+  &__photo {
+    width: 100%;
+  }
+  &__listing__photo-img {
+    width: 100%;
+  }
+  &__text-wrapper {
+    padding: 30px;
+
+  }
+}
+
+.listing__photo--of-the-day {
+  .listing__photo-img {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+}

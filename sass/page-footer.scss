@@ -1,0 +1,64 @@
+.page-footer {
+  background-color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+
+  &--index {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__contacts {
+    padding: 45px 60px 35px;
+    color: #283645;
+  }
+
+  &__contact {
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #d22856;
+    margin-bottom: 15px;
+  }
+
+  &__contact-title {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 18px;
+    color: #283645;
+    font-weight: normal;
+  }
+
+  &__mail-link {
+    text-decoration: none;
+    color: #d22856;
+  }
+
+  &__map {
+    width: 100%;
+    height: 200px;
+    background: #eae6dd url("../img/bg-map-mobile@1x.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &__socials {
+    margin: 40px auto;
+  }
+
+  &__academy {
+    color: #283645;
+    text-decoration: none;
+  }
+}
+
+.page-footer__academy-logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  font-size: 0;
+
+  svg {
+    fill: #d22856;
+    margin-top: -3px;
+  }
+}

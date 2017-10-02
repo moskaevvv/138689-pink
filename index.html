@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Мобильное приложение «Пинк»</title>
   </head>
   <body>
@@ -34,18 +35,20 @@
     <main class="page-content">
       <!--Первый экран-->
       <section class="hero">
-        <h1 class="visually-hidden">Взгляните на жизнь иначе</h1>
-        <figure class="hero__figure">
-          <img class="hero__figure-img" src="http://placehold.it/320x314" width="320" height="314" alt="Приложение «Пинк» в умелых руках">
-        </figure>
+        <div class="hero__wrapper hero__wrapper--on-index">
+          <h1 class="visually-hidden">Взгляните на жизнь иначе</h1>
+          <figure class="hero__figure">
+            <img class="hero__figure-img" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение «Пинк» в умелых руках">
+          </figure>
+        </div>
         <div class="hero__download-wrapper">
-          <button class="button button--white">Скачать приложение</button>
+          <button class="button">Скачать приложение</button>
           <ul class="hero__platforms-list">
             <li class="hero__platform">
               <a class="hero__platform-link hero__platform-link--ios" href="https://itunes.apple.com/ru/genre/ios">App Store</a>
             </li>
             <li class="hero__platform">
-              <a class="hero__platform-linkhero__platform-link--android" href="https://play.google.com/store/apps">Play Market</a>
+              <a class="hero__platform-link hero__platform-link--android" href="https://play.google.com/store/apps">Play Market</a>
             </li>
             <li class="hero__platform">
               <a class="hero__platform-link hero__platform-link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">Microsoft Marketplace</a>
@@ -102,7 +105,7 @@
           </li>
         </ul>
         <figure class="features__img-wrapper">
-          <img class="features__img" src="http://placehold.it/137x320" width="137" height="320" alt="Экран приложения «Пинк»">
+          <img class="features__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Экран приложения «Пинк»">
         </figure>
       </section>
       <!--Отзывы-->
@@ -110,13 +113,15 @@
         <h2 class="visually-hidden">
           Отзывы пользователей
         </h2>
-        <div class="regular-text">
-          <div class="regular-text__title">
+        <div class="testimonials__item">
+
+          <div class="testimonials__name">
             Николай Петров
           </div>
-          <p class="regular-text__paragraph">
+          <p class="testimonials__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
+
         </div>
         <ul class="slider__dots">
           <li class="slider__dot slider__dot--active">Отзыв #1</li>
@@ -132,25 +137,19 @@
         <table class="pricing__tariffs">
           <tr>
             <th class="pricing__tariff">
-              <p class="pricing__tariff-title">
-              Unknown
-              <span class="pricing__tariff-price">0,00 USD</span>
-              </p>
+              <p class="pricing__tariff-title">Unknown</p>
+              <p class="pricing__tariff-price">0,00 USD</p>
             </th>
             <th class="pricing__tariff pricing__tariff--hit">
-              <p class="pricing__tariff-title">
-              Стандарт
-              <span class="pricing__tariff-price">3,99 USD</span>
-              </p>
+              <p class="pricing__tariff-title">Стандарт</p>
+              <p class="pricing__tariff-price">3,99 USD</p>
             </th>
             <th class="pricing__tariff">
-              <p class="pricing__tariff-title">
-              Unknown
-              <span class="pricing__tariff-price">0,00 USD</span>
-              </p>
+              <p class="pricing__tariff-title">Unknown</p>
+              <p class="pricing__tariff-price">0,00 USD</p>
             </th>
           </tr>
-          <tr>
+          <tr class="pricing__first-row">
             <td class="pricing__tariff-feature">
               Unknown feature
             </td>
@@ -192,21 +191,22 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--index">
       <!--Контакты-->
       <section class="page-footer__contacts">
         <h2 class="big-text">
-            Остались вопросы? Свяжитесь с нами!
+            Остались вопросы?<br>
+            Свяжитесь с нами!
         </h2>
         <p class="page-footer__contact">
           <b class="page-footer__contact-title">
-            Звоните:
+            Звоните:<br>
           </b>
           +7 (812) 555-66-66
         </p>
         <p class="page-footer__contact">
           <b class="page-footer__contact-title">
-            Пишите:
+            Пишите:<br>
           </b>
           <a class="page-footer__mail-link" href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru
@@ -214,7 +214,7 @@
         </p>
         <p class="page-footer__contact">
           <b class="page-footer__contact-title">
-            Приезжайте в гости:
+            Приезжайте в гости:<br>
           </b>
             ул. Большая Конюшенная, 19/8
         </p>
@@ -224,7 +224,6 @@
         <div class="page-footer__map-pin">
           Наш офис здесь
         </div>
-        <img class="page-footer__map-img" src="http://placehold.it/320x200" width="320" height="200" alt="Карта проезда">
       </section>
 
     </footer>
