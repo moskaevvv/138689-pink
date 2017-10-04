@@ -1,16 +1,16 @@
 .page-footer {
   background-color: white;
   text-align: center;
-  padding: 40px;
-  margin-top: 40px;
+  padding: 0;
+  margin: 0;
 
-  &--index {
-    padding: 0;
-    margin: 0;
+  &__short-footer {
+    padding: 0 20px;
+    display: none;
   }
 
   &__contacts {
-    padding: 45px 60px 35px;
+    padding: 45px 20px 35px;
     color: #283645;
   }
 
@@ -60,5 +60,40 @@
   svg {
     fill: #d22856;
     margin-top: -3px;
+  }
+}
+
+@media (min-width: 660px) {
+  .page-footer__contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page-footer__short-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__contact {
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-footer__contacts {
+    padding: 45px $sidepadding 35px;
+  }
+
+  .page-footer__contact {
+    width: calc(100% / 3);
+  }
+
+  .page-footer__contact:nth-child(2) {
+    order: 3;
+  }
+
+  .page-footer__short-footer {
+    padding: 0 $sidepadding;
   }
 }

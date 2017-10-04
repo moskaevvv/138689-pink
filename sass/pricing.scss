@@ -46,8 +46,49 @@
   }
 }
 
+.pricing__tariff--full {
+  display: none;
+}
+
 .pricing__first-row {
   .pricing__tariff-feature {
     border-top: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .pricing {
+    padding: 72px 20px 50px;
+  }
+
+  .pricing__tariffs {
+    border: none;
+    width: 100%;
+    margin: 0;
+    text-transform: none;
+    font-size: 0;
+  }
+
+  .pricing__tariff,
+  .pricing__tariff-feature {
+    width: (100%/4);
+  }
+
+  .pricing__tariff--transparent {
+    border: none;
+    border-bottom: 2px solid #e5e5e5;
+    font-size: 0;
+    background-color: #f2f2f2;
+  }
+
+  .pricing__tariff--full {
+    display: table-cell;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  .pricing {
+    padding: 72px $sidepadding 50px;
   }
 }

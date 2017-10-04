@@ -25,6 +25,15 @@ fieldset {
   list-style: none;
 }
 
+$sidepadding: calc((100% - 960px) / 2 + 20px);
+
+@media (min-width: 960px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
 .visually-hidden {
   display: none;
 }
@@ -66,3 +75,5 @@ fieldset {
 @import "listing";
 @import "upload";
 @import "form";
+@import "extended-info";
+@import "slider";
