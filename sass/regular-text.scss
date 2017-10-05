@@ -22,3 +22,10 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: 960px) {
+  .regular-text__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

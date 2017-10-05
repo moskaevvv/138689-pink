@@ -1,0 +1,39 @@
+.extended-info {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .extended-info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 60px 20px;
+  }
+
+  .extended-info__text-wrapper {
+    width: 50%;
+  }
+
+  .extended-info__figure {
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .extended-info {
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    padding: 60px $sidepadding;
+  }
+
+  .extended-info__text-wrapper {
+    width: calc((100% - 40px) / 3 * 2 + 20px - 70px);
+  }
+
+  .extended-info__figure {
+    width: calc((100% - 40px) / 3);
+    box-sizing: border-box;
+    background-color: #cfcfcf;
+    text-align: center;
+  }
+}

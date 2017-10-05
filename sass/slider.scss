@@ -1,0 +1,17 @@
+.slider {
+  &__dots {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 660px) {
+  .slider__dots--no-tablet {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider__dots {
+    display: none;
+  }
+}
