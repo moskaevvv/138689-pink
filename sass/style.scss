@@ -23,6 +23,7 @@ fieldset {
   padding: 0;
   border: none;
   list-style: none;
+  font-weight: normal;
 }
 
 $sidepadding: calc((100% - 960px) / 2 + 20px);
@@ -77,3 +78,4 @@ $sidepadding: calc((100% - 960px) / 2 + 20px);
 @import "form";
 @import "extended-info";
 @import "slider";
+@import "triangle-bottom";

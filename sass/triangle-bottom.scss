@@ -1,0 +1,26 @@
+.triangle-edge {
+  overflow: hidden;
+}
+
+.triangle-edge::before {
+  position: absolute;
+  left: -2vw;
+  width: 104vw;
+  top: -1px;
+  background: transparent url('../img/bg-triangle-white-my.svg') no-repeat center top;
+  background-size: 100% auto;
+  content: "";
+  height: 100px;
+}
+
+.triangle-edge--double::before {
+  background-image: url('../img/bg-triangle-white-footer-my.svg');
+}
+
+@media (min-width: 960px) {
+  .triangle-edge::before {
+    background-size: 100% 100%;
+    left: -50%;
+    width: 200vw;
+  }
+}

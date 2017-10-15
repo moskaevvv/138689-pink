@@ -1,6 +1,21 @@
 .slider {
   &__dots {
-    margin-top: 25px;
+    width: 56px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+  }
+
+  &__dot {
+    width: 6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 50%;
+  }
+
+  &__dot--active {
+    box-shadow: 0 0 0 3px #283645;
+    background-color: white;
   }
 }
 

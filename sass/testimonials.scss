@@ -4,33 +4,60 @@
   margin-top: -45px;
   background-color: white;
   text-align: center;
-  padding: 48px 20px;
+  padding: 45px 20px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &__who {
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
   }
 
   &__text {
     line-height: 30px;
     color: #283645;
   }
+
+  &__item {
+    margin: 0 5% 35px;
+  }
+
+  &__info {
+    display: none;
+  }
 }
 
 @media (min-width: 660px) {
   .testimonials {
     margin-top: 0;
+    padding-bottom: 20px;
   }
 
   .testimonials__item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 25px;
   }
 
   .testimonials__who {
     order: 1;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  .testimonials__text {
+    font-size: 18px;
+  }
+
+  .testimonials__info {
+    display: block;
+    font-size: 14px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #283645;
+    margin-top: 5px;
   }
 }
 

@@ -3,7 +3,7 @@
   color: white;
   font-family: "Open Sans Light", "Arial", sans-serif;
   text-align: center;
-  margin-top: -66px;
+  margin-top: -70px;
   position: relative;
   z-index: 1;
 
@@ -20,12 +20,12 @@
     margin: 30px auto;
   }
 
-  &__wrapper--inside {
-    max-height: 235px;
-  }
-
   h1 {
     margin-bottom: 30px;
+  }
+
+  button {
+    max-width: 350px;
   }
 }
 
@@ -41,12 +41,12 @@
 .hero__wrapper {
   background: #1d2631 url("../img/bg-back-mobile@1x.jpg") top center no-repeat;
   background-size: cover;
-  min-height: 237px;
+  min-height: 240px;
   display: flex;
   justify-content: center;
 
   &--on-index {
-    min-height: 462px;
+    min-height: 460px;
   }
 }
 
@@ -54,13 +54,50 @@
   align-self: flex-end;
   width: 258px;
   margin-left: -45px;
-  margin-bottom: -7px;
+  line-height: 0;
+}
+
+.hero__platforms-list {
+  display: flex;
+  font-size: 0;
+  justify-content: space-between;
+  width: 210px;
+  align-items: center;
+}
+
+.hero__platform-link {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  display: block;
+}
+
+.hero__platform-link--ios {
+  background-image: url('../img/logo-apple.svg');
+  height: 57px;
+  width: 47px;
+}
+
+.hero__platform-link--android {
+  background-image: url('../img/logo-android.svg');
+  width: 43px;
+  height: 48px;
+}
+
+.hero__platform-link--windows {
+  background-image: url('../img/logo-microsoft.svg');
+  width: 44px;
+  height: 42px;
 }
 
 @media (min-width: 660px) {
   .hero {
     margin-top: -110px;
     font-size: 18px;
+  }
+
+  .hero__platforms-list {
+    margin: 45px auto 35px;
   }
 
   .hero__wrapper--inside {
