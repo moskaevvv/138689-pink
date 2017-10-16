@@ -45,7 +45,12 @@
 .form__section--button {
   .form__subheader {
     margin-bottom: 0;
+    text-align: center;
   }
+
+  padding-top: 10px;
+  padding-bottom: 20px;
+  line-height: 0;
 }
 
 .form__section {
@@ -86,19 +91,7 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
 
-.form__section--button {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  line-height: 0;
-}
-
-.form__section--button .form__subheader {
-  text-align: center;
-}
-
-.form__input-wrapper {
   .form__subheader {
     display: block;
     padding-left: 20px;
@@ -174,6 +167,16 @@
   }
 }
 
+.form__checkbox-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+
+.form__checkbox-column:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 660px) {
   .form {
     padding: 0 20px;
@@ -222,7 +225,7 @@
   }
 
   .form__subheader-bg {
-    background-color:  white;
+    background-color: white;
     padding: 0 20px;
     position: relative;
     z-index: 3;
@@ -255,6 +258,8 @@
   .form__section--contacts .form__input-wrapper {
     padding: 0;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
   .form__input-wrapper--phone::before {
@@ -295,11 +300,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     padding-bottom: 25px;
-  }
-
-  .form__section--contacts .form__input-wrapper {
-    display: flex;
-    flex-direction: column;
   }
 
   .form__section--emotions .form__input-wrapper {
@@ -362,18 +362,58 @@
   .form__section--contacts {
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 0;
   }
 
   .form__section--contacts .form__input-wrapper {
     width: calc((100% - 70px) / 2);
+    margin-bottom: 10px;
   }
 
   .form__section--achivs {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 55px;
   }
 
-  .form__section--achivs .form__input-wrapper {
-    width: 30%;
+  .form__section--achivs h2 {
+    padding-bottom: 15px;
+  }
+
+  .form__section--app .form__subheader-bg {
+    margin-bottom: 45px;
+  }
+
+  .form__section--app {
+    padding: 0 20px 55px 20px;
+  }
+
+  .form__section--app .form__input-wrapper {
+    margin-left: 55px;
+  }
+
+  .form__section--contacts h2 {
+    box-sizing: border-box;
+    margin-bottom: -5px;
+  }
+
+  .form__checkbox-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .form__input-wrapper--checkbox label {
+    padding-right: 0;
+  }
+
+  .form__section--emotions .form__textfield {
+    min-height: 125px;
+    margin-bottom: -5px;
+  }
+
+  .form__section--button {
+    margin-bottom: -5px;
   }
 }

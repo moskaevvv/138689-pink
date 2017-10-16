@@ -28,6 +28,12 @@
   &__info {
     display: none;
   }
+
+  &__quote {
+    line-height: 0;
+    margin-bottom: 50px;
+    display: none;
+  }
 }
 
 @media (min-width: 660px) {
@@ -63,6 +69,35 @@
 
 @media (min-width: 960px) {
   .testimonials {
-    padding: 48px $sidepadding;
+    padding: 75px $sidepadding 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .testimonials__item {
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .testimonials__who {
+    margin-bottom: 0;
+  }
+
+  .testimonials__quote {
+    display: block;
+  }
+
+  .testimonials__info {
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .testimonials__name {
+    line-height: 30px;
+    font-size: 24px;
   }
 }

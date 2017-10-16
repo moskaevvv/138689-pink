@@ -46,7 +46,7 @@
   .extended-info {
     background-color: #f2f2f2;
     justify-content: space-between;
-    padding: 60px $sidepadding;
+    padding: 25px $sidepadding 65px;
   }
 
   .extended-info__text-wrapper {
@@ -58,5 +58,20 @@
     box-sizing: border-box;
     background-color: #cfcfcf;
     text-align: center;
+  }
+
+  .extended-info__paragraph {
+    max-width: 95%;
+    margin: 20px 0 30px;
+  }
+
+  .extended-info__title {
+    max-width: 100%;
+  }
+
+  .extended-info__img {
+    margin-left: 0;
+    width: 297px;
+    height: 345px;
   }
 }

@@ -25,14 +25,12 @@
   }
 }
 
-.listing__counter {
-  path {
-    fill: #d22856;
-  }
+.listing__counter path {
+  fill: #d22856;
+}
 
-  svg {
-    margin-right: 10px;
-  }
+.listing__counter svg {
+  margin-right: 10px;
 }
 
 .listing__item--of-the-day {
@@ -80,6 +78,11 @@
   .listing__item {
     display: flex;
     flex-direction: column;
+    margin: 0 0 20px;
+  }
+
+  .listing__item:last-child {
+    margin-bottom: 20px;
   }
 
   .listing__text-wrapper {
@@ -87,10 +90,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-grow: 100;
-}
+  }
 
   .listing__thumbs .listing__item {
-    margin: 0 0 20px;
     width: calc((100% - 20px) / 2);
   }
 
@@ -128,11 +130,24 @@
   .listing__item--of-the-day svg {
     margin-left: 10px;
   }
+
+  .listing__item--of-the-day {
+    margin: 55px 20px 20px 20px;
+  }
+
+  .listing__item--of-the-day .listing__photo {
+    margin-top: -55px;
+  }
 }
 
 @media (min-width: 960px) {
+  .listing {
+    margin-bottom: -30px;
+  }
+
   .listing__thumbs {
     padding: 0 $sidepadding;
+    margin-bottom: -50px;
   }
 
   .listing__thumbs .listing__item {
@@ -140,7 +155,15 @@
   }
 
   .listing__item--of-the-day {
-    margin: 0 $sidepadding 20px;
+    margin: 55px $sidepadding 20px;
+  }
+
+  .listing__item {
+    margin-bottom: 50px;
+  }
+
+  .listing__item:last-child {
+    margin-bottom: 50px;
   }
 
   .listing__item--of-the-day .listing__photo {
@@ -149,5 +172,19 @@
 
   .listing__item--of-the-day .listing__photo-img {
     margin-left: calc(-50vw + 460px);
+  }
+
+  .listing__text-wrapper p,
+  b {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .listing__text-wrapper .listing__counter {
+    font-size: 12px;
+  }
+
+  .listing__text-wrapper {
+    padding: 15px 30px 20px;
   }
 }

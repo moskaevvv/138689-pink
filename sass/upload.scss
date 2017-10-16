@@ -5,6 +5,9 @@
 
   &__tools {
     margin: 40px auto 35px;
+    display: flex;
+    font-size: 0;
+    line-height: 0;
   }
 
   &__range {
@@ -42,13 +45,6 @@
   width: 70%;
 }
 
-.upload__tools {
-  display: flex;
-  font-size: 0;
-  line-height: 0;
-
-}
-
 .upload__tool {
   display: flex;
   align-items: center;
@@ -57,13 +53,15 @@
   height: 50px;
   margin: 0 15px;
 
-  path, rect {
+  path,
+  rect {
     fill: rgba(40, 54, 69, 0.3);
   }
 }
 
 .upload__tool--active {
-  path, rect {
+  path,
+  rect {
     fill: #d22856;
   }
 }
@@ -157,7 +155,6 @@
     height: 72px;
     background: transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    display: block;
     margin: 0;
     box-sizing: border-box;
     display: flex;
@@ -174,9 +171,9 @@
     height: 2px;
     position: relative;
     width: 100%;
-    background-color:  #283645;
+    background-color: #283645;
     display: block;
-    content:  " ";
+    content: " ";
   }
 
   .upload__slider-control {
@@ -207,21 +204,17 @@
     height: 16px;
     margin-left: 8px;
   }
-
 }
 
 @media (min-width: 960px) {
   .upload {
     padding: 55px 55px 55px 80px;
-    margin: 0 $sidepadding;
+    margin: -20px auto 30px;
+    width: 960px;
   }
 
   .upload__tools-wrapper {
     width: calc(100% - 300px - 90px);
-  }
-
-  .upload__tool {
-    width: 50px;
   }
 
   .upload__buttons {
@@ -229,14 +222,33 @@
     text-align: left;
     font-size: 0;
     line-height: 0;
+    flex-wrap: nowrap;
+    max-width: 100%;
   }
 
   .upload__buttons .button {
-    margin-bottom: 0;
+    min-width: auto;
     width: calc((100% - 20px) / 2);
+    margin-bottom: 0;
   }
 
   .upload__buttons .button:first-child {
     margin-right: 20px;
+  }
+
+  .upload__tool svg {
+    height: auto;
+  }
+
+  .upload__tool:first-child svg {
+    height: auto;
+  }
+
+  .upload__tool:last-child svg {
+    height: auto;
+  }
+
+  .upload__tools {
+    width: 90px;
   }
 }

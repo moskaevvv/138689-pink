@@ -17,6 +17,13 @@
     box-shadow: 0 0 0 3px #283645;
     background-color: white;
   }
+
+  &__arrow {
+    min-width: 60px;
+    font-size: 0;
+    box-sizing: border-box;
+    display: none;
+  }
 }
 
 @media (min-width: 660px) {
@@ -28,5 +35,16 @@
 @media (min-width: 960px) {
   .slider__dots {
     display: none;
+  }
+
+  .slider__arrow {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 140px;
+    justify-content: flex-start;
+  }
+
+  .slider__arrow--next {
+    justify-content: flex-end;
   }
 }

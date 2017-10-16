@@ -17,8 +17,9 @@
 
 @media (min-width: 960px) {
   .page-content__lead {
-    margin: 0 $sidepadding;
-    padding: 105px 15%;
+    margin: 0 auto;
+    padding: 90px 0;
     font-size: 18px;
+    max-width: 600px;
   }
 }

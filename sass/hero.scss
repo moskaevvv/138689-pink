@@ -18,6 +18,11 @@
 
   &__platforms-list {
     margin: 30px auto;
+    display: flex;
+    font-size: 0;
+    justify-content: space-between;
+    width: 210px;
+    align-items: center;
   }
 
   h1 {
@@ -57,14 +62,6 @@
   line-height: 0;
 }
 
-.hero__platforms-list {
-  display: flex;
-  font-size: 0;
-  justify-content: space-between;
-  width: 210px;
-  align-items: center;
-}
-
 .hero__platform-link {
   background-position: center center;
   background-repeat: no-repeat;
@@ -73,19 +70,19 @@
 }
 
 .hero__platform-link--ios {
-  background-image: url('../img/logo-apple.svg');
+  background-image: url("../img/logo-apple.svg");
   height: 57px;
   width: 47px;
 }
 
 .hero__platform-link--android {
-  background-image: url('../img/logo-android.svg');
+  background-image: url("../img/logo-android.svg");
   width: 43px;
   height: 48px;
 }
 
 .hero__platform-link--windows {
-  background-image: url('../img/logo-microsoft.svg');
+  background-image: url("../img/logo-microsoft.svg");
   width: 44px;
   height: 42px;
 }
@@ -130,7 +127,6 @@
 
   .hero__figure {
     align-self: flex-end;
-    margin-bottom: -5px;
   }
 }
 
@@ -154,5 +150,19 @@
   .hero__figure {
     align-self: flex-end;
     width: calc(((100% - 40px) / 3) * 2);
+  }
+
+  .hero h1 {
+    margin-bottom: 50px;
+  }
+
+  .hero__platforms-list {
+    margin: 65px auto 50px;
+  }
+
+  .hero__wrapper--inside h1 {
+    margin: 175px auto 0;
+    padding: 0;
+    max-width: 750px;
   }
 }

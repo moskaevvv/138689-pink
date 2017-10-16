@@ -84,6 +84,7 @@
   .pricing__tariff {
     padding: 15px 0 10px;
     line-height: 25px;
+    text-transform: uppercase;
   }
 
   .pricing__tariff-title {
@@ -98,6 +99,7 @@
 
   .pricing__tariff-feature:first-child {
     font-size: 14px;
+    background-image: none;
   }
 
   .pricing__tariff,
@@ -111,11 +113,7 @@
     background-size: 32px;
   }
 
-  .pricing__tariff-feature:first-child {
-    background-image: none;
-  }
-
- .pricing__tariff-feature--disabled {
+  .pricing__tariff-feature--disabled {
     background-image: url("../img/icon-no-my.svg");
     background-size: 25px;
   }
@@ -135,6 +133,26 @@
 
 @media (min-width: 960px) {
   .pricing {
-    padding: 72px $sidepadding 50px;
+    padding: 150px $sidepadding 95px;
+  }
+
+  .pricing__tariff-feature:first-child {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 16px 23px;
+  }
+
+  .pricing__tariff-title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .pricing__tariff-price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .pricing__tariff {
+    padding-bottom: 20px;
   }
 }
