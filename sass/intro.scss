@@ -2,7 +2,9 @@
   color: #283645;
   text-align: center;
   background-color: white;
-  padding: 43px 25% 50px;
+  padding: 40px 25% 25px;
+  position: relative;
+  z-index: 3;
 
   p {
     margin-bottom: 25px;
@@ -11,7 +13,7 @@
 
 @media (min-width: 660px) {
   .intro {
-    padding: 50px 10% 60px;
+    padding: 50px 10% 40px;
   }
 
   .intro p:last-child {
@@ -25,7 +27,7 @@
 
 @media (min-width: 960px) {
   .intro {
-    padding: 50px $sidepadding 60px;
+    padding: 70px $sidepadding 75px;
   }
 
   .intro p {

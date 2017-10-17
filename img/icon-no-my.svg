@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-no</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-no" transform="translate(-4.000000, -4.000000)">
+            <rect id="Rectangle" x="0" y="0" width="35" height="35"></rect>
+            <path d="M19.497,17.376 L30.312,6.562 C30.898,5.977 30.898,5.027 30.312,4.441 C29.726,3.855 28.777,3.855 28.191,4.441 L17.376,15.255 L6.562,4.439 C5.976,3.853 5.027,3.853 4.441,4.439 C3.855,5.024 3.855,5.974 4.441,6.56 L15.255,17.375 L4.439,28.19 C3.853,28.776 3.853,29.725 4.439,30.311 C4.732,30.604 5.116,30.75 5.5,30.75 C5.884,30.75 6.268,30.604 6.561,30.311 L17.376,19.497 L28.19,30.312 C28.483,30.605 28.867,30.751 29.251,30.751 C29.635,30.751 30.019,30.605 30.312,30.312 C30.898,29.726 30.898,28.777 30.312,28.191 L19.497,17.376 Z" id="Shape" fill="#F15B26" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

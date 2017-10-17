@@ -1,8 +1,12 @@
 .pricing {
-  padding: 75px 0 50px;
+  padding: 95px 0 50px;
   background-color: #f2f2f2;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
 
   &__tariffs {
     border: 2px solid #e5e5e5;
@@ -12,13 +16,12 @@
     width: 280%;
     margin-left: -90%;
     background-color: white;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   &__tariff {
     width: (100%/3);
     border: 2px solid #e5e5e5;
-    border-bottom: none;
     border-top: none;
     background-color: #283645;
     padding: 16px 0 20px;
@@ -26,6 +29,7 @@
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
+    border-bottom-color: #283645;
   }
 
   &__tariff-feature {
@@ -50,7 +54,15 @@
   display: none;
 }
 
-.pricing__first-row {
+.pricing__tariff:nth-child(2) {
+  border-left-color: #283645;
+}
+
+.pricing__tariff:nth-child(4) {
+  border-right-color: #283645;
+}
+
+.pricing__row--first {
   .pricing__tariff-feature {
     border-top: none;
   }
@@ -58,7 +70,7 @@
 
 @media (min-width: 660px) {
   .pricing {
-    padding: 72px 20px 50px;
+    padding: 100px 20px 70px;
   }
 
   .pricing__tariffs {
@@ -69,9 +81,41 @@
     font-size: 0;
   }
 
+  .pricing__tariff {
+    padding: 15px 0 10px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  .pricing__tariff-title {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .pricing__tariff-price {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .pricing__tariff-feature:first-child {
+    font-size: 14px;
+    background-image: none;
+  }
+
   .pricing__tariff,
   .pricing__tariff-feature {
     width: (100%/4);
+  }
+
+  .pricing__tariff-feature {
+    padding: 7px 15px 8px;
+    background: white url("../img/icon-yes-table.svg") no-repeat center center;
+    background-size: 32px;
+  }
+
+  .pricing__tariff-feature--disabled {
+    background-image: url("../img/icon-no-my.svg");
+    background-size: 25px;
   }
 
   .pricing__tariff--transparent {
@@ -89,6 +133,26 @@
 
 @media (min-width: 960px) {
   .pricing {
-    padding: 72px $sidepadding 50px;
+    padding: 150px $sidepadding 95px;
+  }
+
+  .pricing__tariff-feature:first-child {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 16px 23px;
+  }
+
+  .pricing__tariff-title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .pricing__tariff-price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .pricing__tariff {
+    padding-bottom: 20px;
   }
 }
