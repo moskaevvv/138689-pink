@@ -36,9 +36,11 @@
     width: (100%/3);
     border: 2px solid #e5e5e5;
     text-align: left;
-    padding: 22px 20px 20px;
+    padding: 15px 20px 14px;
     color: #283645;
     line-height: 30px;
+    background: white url("../img/icon-yes-table.svg") no-repeat 96% center;
+    background-size: 32px;
   }
 
   &__tariff-price {
@@ -66,6 +68,11 @@
   .pricing__tariff-feature {
     border-top: none;
   }
+}
+
+.pricing__tariff-feature--disabled {
+  background-image: url("../img/icon-no-my.svg");
+  background-size: 25px;
 }
 
 @media (min-width: 660px) {

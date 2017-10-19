@@ -34,6 +34,10 @@
     margin-bottom: 50px;
     display: none;
   }
+
+  &__quote-img {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 660px) {

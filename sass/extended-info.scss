@@ -35,10 +35,37 @@
     width: 50%;
     line-height: 0;
     text-align: center;
+    position: relative;
   }
 
   .extended-info__img {
     margin-left: -20px;
+    width: 238px;
+    height: 276px;
+  }
+
+  .extended-info__figure::after {
+    content: "24";
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 96px;
+    line-height: 150px;
+    color: #d22856;
+    text-align: center;
+    padding-top: 7px;
+    width: 202px;
+    height: 202px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 13px solid #d22856;
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    margin-left: -111px;
+    border-radius: 50%;
+  }
+
+  .extended-info__img path {
+    fill: #dedede;
   }
 }
 
@@ -56,7 +83,6 @@
   .extended-info__figure {
     width: calc((100% - 40px) / 3);
     box-sizing: border-box;
-    background-color: #cfcfcf;
     text-align: center;
   }
 
@@ -71,7 +97,20 @@
 
   .extended-info__img {
     margin-left: 0;
-    width: 297px;
+    width: 298px;
     height: 345px;
+  }
+
+  .extended-info__figure::after {
+    font-size: 120px;
+    line-height: 185px;
+    padding-top: 12px;
+    width: 253px;
+    height: 253px;
+    border-width: 17px;
+    bottom: 23px;
+    left: 50%;
+    margin-left: -126.5px;
+    border-radius: 50%;
   }
 }

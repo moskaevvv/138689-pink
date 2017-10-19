@@ -11,7 +11,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Приложение «Пинк»">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="auto" height="auto" alt="Приложение «Пинк»">
+          </picture>
         </a>
         <button class="page-header__toggle">Открыть меню</button>
       </div>
@@ -48,21 +52,22 @@
       <ul class="listing">
         <li class="listing__item listing__item--of-the-day">
           <a class="listing__photo"  href="#">
-          <img class="listing__photo-img" width="100%" src="img/panorama-mobile@1x.jpg" alt="Фото">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg" srcset="img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg" srcset="img/panorama-tablet@2x.jpg 2x">
+              <img class="listing__photo-img" src="img/panorama-mobile@1x.jpg" alt="Фото" srcset="img/panorama-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="listing__text-wrapper">
-
-              <b class="regular-text__subtitle">
-                  Анна
-                  <span class="regular-text__note">(5 минут назад)</span><br>
-                  </b>
-
+            <b class="regular-text__subtitle">
+            Анна
+            <span class="regular-text__note">(5 минут назад)</span><br>
+            </b>
             <div class="regular-text">
               <p class="regular-text__paragraph regular-text__paragraph--left-alligned">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
             </div>
-
             <p class="listing__counter listing__counter--likes">
               <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12.545px" height="11.99px" viewBox="521.939 473.064 12.545 11.99" enable-background="new 521.939 473.064 12.545 11.99" xml:space="preserve">
                 <g>
@@ -70,16 +75,19 @@
                 </g>
               </svg>
               <span class="listing__likes">
-                Нравится: 215
+              Нравится: 215
               </span>
             </p>
-
           </div>
         </li>
         <div class="listing__thumbs">
           <li class="listing__item">
             <a class="listing__photo"  href="#">
-            <img class="listing__photo-img" src="img/photo-car-mobile@1x.jpg" width="100%" alt="Фото">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg" srcset="img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg" srcset="img/photo-car-tablet@2x.jpg 2x">
+                <img class="listing__photo-img" src="img/photo-car-mobile@1x.jpg" width="100%" alt="Фото" srcset="img/photo-car-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="listing__text-wrapper">
               <div class="regular-text">
@@ -103,7 +111,11 @@
           </li>
           <li class="listing__item">
             <a class="listing__photo"  href="#">
-            <img class="listing__photo-img" src="img/photo-drumset-mobile@1x.jpg" width="100%" alt="Фото">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg" srcset="img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg" srcset="img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="listing__photo-img" src="img/photo-drumset-mobile@1x.jpg" width="100%" alt="Фото" srcset="img/photo-drumset-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="listing__text-wrapper">
               <div class="regular-text">
@@ -127,7 +139,11 @@
           </li>
           <li class="listing__item">
             <a class="listing__photo"  href="#">
-            <img class="listing__photo-img" src="img/photo-window-mobile@1x.jpg" width="100%" alt="Фото">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg" srcset="img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg" srcset="img/photo-window-tablet@2x.jpg 2x">
+                <img class="listing__photo-img" src="img/photo-window-mobile@1x.jpg" width="100%" alt="Фото" srcset="img/photo-window-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="listing__text-wrapper">
               <div class="regular-text">
@@ -151,7 +167,11 @@
           </li>
           <li class="listing__item">
             <a class="listing__photo"  href="#">
-            <img class="listing__photo-img" src="img/photo-fair-mobile@1x.jpg" width="100%" alt="Фото">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg" srcset="img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg" srcset="img/photo-fair-tablet@2x.jpg 2x">
+                <img class="listing__photo-img" src="img/photo-fair-mobile@1x.jpg" width="100%" alt="Фото" srcset="img/photo-fair-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="listing__text-wrapper">
               <div class="regular-text">
@@ -175,7 +195,11 @@
           </li>
           <li class="listing__item">
             <a class="listing__photo"  href="#">
-            <img class="listing__photo-img" src="img/photo-pov-mobile@1x.jpg" width="100%" alt="Фото">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg" srcset="img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg" srcset="img/photo-pov-tablet@2x.jpg 2x">
+                <img class="listing__photo-img" src="img/photo-pov-mobile@1x.jpg" width="100%" alt="Фото" srcset="img/photo-pov-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="listing__text-wrapper">
               <div class="regular-text">
@@ -199,7 +223,11 @@
           </li>
           <li class="listing__item">
             <a class="listing__photo"  href="#">
-            <img class="listing__photo-img" src="img/photo-wing-mobile@1x.jpg" width="100%" alt="Фото">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg" srcset="img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg" srcset="img/photo-wing-tablet@2x.jpg 2x">
+                <img class="listing__photo-img" src="img/photo-wing-mobile@1x.jpg" width="100%" alt="Фото" srcset="img/photo-wing-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="listing__text-wrapper">
               <div class="regular-text">
@@ -229,7 +257,11 @@
       <!--Загрузка фото-->
       <form class="upload" action="">
         <figure class="upload__img-wrapper">
-          <img class="upload__img" src="img/photo-road-mobile@1x.jpg" width="100%" alt="Так будет выглядеть фото после загрузки">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg" srcset="img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg" srcset="img/photo-road-tablet@2x.jpg 2x">
+            <img class="upload__img" src="img/photo-road-mobile@1x.jpg" width="100%" alt="Так будет выглядеть фото после загрузки" srcset="img/photo-road-mobile@2x.jpg 2x">
+          </picture>
         </figure>
         <div class="upload__tools-wrapper">
           <div class="upload__ajustements">
@@ -280,7 +312,10 @@
     <footer class="page-footer">
       <div class="page-footer__short-footer page-footer__short-footer--active">
         <div class="page-footer__logo">
-          <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Приложение «Пинк»">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-img" src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Приложение «Пинк»">
+          </picture>
         </div>
         <div class="page-footer__socials">
           <a class="page-footer__social page-footer__social--twitter" href="https://twitter.com">
@@ -310,12 +345,13 @@
           Разработано
           <span class="page-footer__academy-logo">
             HTML Academy
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="34px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>
           </span>
         </a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

@@ -27,6 +27,8 @@ fieldset {
 }
 
 $sidepadding: calc((100% - 960px) / 2 + 10px);
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 @media (min-width: 960px) {
   body {
