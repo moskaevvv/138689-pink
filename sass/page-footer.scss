@@ -41,6 +41,16 @@
     color: #d22856;
   }
 
+  &__mail-link:hover {
+    color: #283645;
+    border-bottom: 1px solid #283645;
+  }
+
+  &__mail-link:active {
+    border: none;
+    opacity: 0.3;
+  }
+
   &__map {
     width: 100%;
     height: 200px;
@@ -89,8 +99,37 @@
   }
 }
 
+.page-footer__logo {
+  font-size: 0;
+  width: 147px;
+  height: 41px;
+  background: transparent url("../img/logo-pink-blue-mobile.svg") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.page-footer__short-footer--active .page-footer__logo:hover {
+  background-image: url("../img/logo-pink-blue-mobile-red.svg");
+}
+
+.page-footer__short-footer--active .page-footer__logo:active {
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  opacity: 0.3;
+}
+
 .page-footer__social svg {
   margin-left: 2px;
+}
+
+.page-footer__social:hover {
+  border-color: rgba(40, 54, 69, 1);
+}
+
+.page-footer__social:active {
+  border-color: rgba(40, 54, 69, 0.1);
+
+  svg {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social path {
@@ -112,6 +151,14 @@
   svg {
     fill: #d22856;
   }
+}
+
+.page-footer__academy:hover svg {
+    fill: #283645;
+}
+
+.page-footer__academy:active svg {
+  opacity: 0.3;
 }
 
 @media (min-width: 660px) {
@@ -171,6 +218,19 @@
 }
 
 @media (min-width: 960px) {
+  .page-footer__logo {
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+  }
+
+  .page-footer__short-footer--active .page-footer__logo:hover {
+    background-image: url("../img/logo-pink-blue-desktop-red.svg");
+  }
+
+  .page-footer__short-footer--active .page-footer__logo:active {
+    background-image: url("../img/logo-pink-blue-desktop.svg");
+    opacity: 0.3;
+  }
+
   .page-footer__contacts {
     padding: 65px $sidepadding 15px;
   }

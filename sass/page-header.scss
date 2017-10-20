@@ -19,6 +19,20 @@
 
   &__logo {
     line-height: 0;
+    font-size: 0;
+    width: 75px;
+    height: 23px;
+    background: transparent url("../img/logo-pink-white-mobile.svg") center center no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &__logo:hover {
+    background-image: url("../img/logo-pink-white-mobile-red.svg");
+  }
+
+  &__logo:active {
+    background-image: url("../img/logo-pink-white-mobile.svg");
+    opacity: 0.3;
   }
 
   &__list {
@@ -41,16 +55,32 @@
   }
 }
 
+.page-header__wrapper--on-index
+
 .page-header__toggle {
   border: none;
   font-size: 0;
   width: 50px;
   height: 25px;
   background: transparent url("../img/icon-menu-burger.svg") no-repeat center center;
+  cursor: pointer;
+}
+
+.page-header__toggle:hover {
+  background-image: url("../img/icon-menu-burger-red.svg");
 }
 
 .page-header__toggle--to-close {
   background-image: url("../img/icon-menu-cross.svg");
+  background-position-x: right;
+}
+
+.page-header__toggle--to-close:hover {
+  background-image: url("../img/icon-menu-cross-red.svg");
+}
+
+.page-header__toggle:active {
+  opacity: 0.3;
 }
 
 .page-header--compact .page-header__menu {
@@ -61,6 +91,14 @@
   border: none;
 }
 
+.page-header__list-item a[href]:hover {
+  color: #d22856;
+}
+
+.page-header__list-item a[href]:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
 @media (min-width: 660px) {
   .page-header__wrapper {
     height: 110px;
@@ -69,10 +107,17 @@
 
   .page-header__logo {
     margin-top: -15px;
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    width: 147px;
+    height: 41px;
   }
 
-  .page-header--compact .page-header__logo {
-    margin-top: -17px;
+  .page-header__logo:hover {
+    background-image: url("../img/logo-pink-white-tablet-red.svg");
+  }
+
+  .page-header__logo:active {
+    background-image: url("../img/logo-pink-white-tablet.svg");
   }
 }
 
@@ -87,6 +132,18 @@
     padding: 0;
     border: none;
     height: auto;
+  }
+
+  .page-header__logo {
+    background-image: url("../img/logo-pink-white-desktop.svg");
+  }
+
+  .page-header__logo:hover {
+    background-image: url("../img/logo-pink-white-desktop-red.svg");
+  }
+
+  .page-header__logo:active {
+    background-image: url("../img/logo-pink-white-desktop.svg");
   }
 
   .page-header__toggle {
@@ -107,5 +164,23 @@
 
   .page-header--compact .page-header__menu {
     display: block;
+  }
+
+  .page-header__list-item a[href]:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .page-header__list-item--active {
+    position: relative;
+  }
+
+  .page-header__list-item--active::after {
+    position: absolute;
+    content: " ";
+    height: 2px;
+    background-color: white;
+    bottom: 33px;
+    left: 80px;
+    right: 0;
   }
 }

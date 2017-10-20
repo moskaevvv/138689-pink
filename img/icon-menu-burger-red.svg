@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="25px" viewBox="0 0 50 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-menu-burger-red</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-menu-burger-red" fill-rule="nonzero" fill="#D22856">
+            <path d="M1.137,0 C0.51,0 0,0.428 0,1.01 L0,2.991 C0,3.549 0.494,4.001 1.139,4.001 L48.81,4.001 C49.438,4.001 49.948,3.573 49.948,2.991 L49.948,1.01 C49.948,0.452 49.454,0 48.81,0 L1.137,0 Z M1.137,10.003 C0.51,10.003 0,10.431 0,11.013 L0,12.993 C0,13.55 0.494,14.003 1.139,14.003 L48.81,14.003 C49.438,14.003 49.948,13.575 49.948,12.993 L49.948,11.013 C49.948,10.455 49.454,10.003 48.81,10.003 L1.137,10.003 Z M1.137,20.005 C0.51,20.005 0,20.434 0,21.016 L0,22.997 C0,23.554 0.494,24.007 1.139,24.007 L48.81,24.007 C49.438,24.007 49.948,23.579 49.948,22.997 L49.948,21.016 C49.948,20.458 49.454,20.005 48.81,20.005 L1.137,20.005 Z" id="path-1"></path>
+        </g>
+    </g>
+</svg>
