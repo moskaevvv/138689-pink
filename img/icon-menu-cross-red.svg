@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-menu-cross-red</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-menu-cross-red" fill-rule="nonzero" fill="#D22856">
+            <path d="M15.087,11.933 L23.647,3.374 C23.94,3.081 23.94,2.606 23.647,2.313 L21.554,0.22 C21.414,0.079 21.223,0 21.023,0 C20.824,0 20.632,0.079 20.494,0.22 L11.933,8.78 L3.373,0.22 C3.091,-0.062 2.593,-0.062 2.312,0.22 L0.22,2.313 C-0.073,2.606 -0.073,3.081 0.22,3.374 L8.78,11.933 L0.22,20.492 C-0.073,20.785 -0.073,21.26 0.22,21.554 L2.313,23.648 C2.454,23.79 2.644,23.868 2.843,23.868 C3.042,23.868 3.233,23.79 3.373,23.648 L11.934,15.088 L20.494,23.648 C20.635,23.79 20.826,23.868 21.024,23.868 C21.223,23.868 21.414,23.79 21.554,23.648 L23.647,21.554 C23.94,21.26 23.94,20.785 23.647,20.492 L15.087,11.933 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

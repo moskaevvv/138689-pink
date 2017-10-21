@@ -32,6 +32,16 @@
 
   button {
     max-width: 350px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: white;
+    color: #d22856;
+  }
+
+  button:active {
+    color: rgba(210, 40, 86, 0.3);
   }
 }
 

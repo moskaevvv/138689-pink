@@ -59,6 +59,17 @@
   }
 }
 
+.upload__tool--unactive {
+  cursor: pointer;
+}
+
+.upload__tool--unactive:hover {
+  path,
+  rect {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+}
+
 .upload__tool--active {
   path,
   rect {
@@ -93,8 +104,24 @@
   cursor: pointer;
 }
 
+.upload__slider-control:hover,
+.upload__slider-control:active {
+  background-color: #d22856;
+}
+
 
 @media (min-width: 660px) {
+  .upload__tool--unactive {
+    cursor: default;
+  }
+
+  .upload__tool--unactive:hover {
+    path,
+    rect {
+      fill: #d22856;
+    }
+  }
+
   .upload {
     display: flex;
     padding: 55px 20px;

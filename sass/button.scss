@@ -10,6 +10,7 @@
   border-radius: 100px;
   padding: 14px 0 17px;
   width: 100%;
+  cursor: pointer;
 
   &--primary {
     color: #d22856;
@@ -17,8 +18,28 @@
     margin-bottom: 10px;
   }
 
-  &--disabled {
+  &--primary:hover {
+    color: white;
+    background-color: #d22856;
+  }
+
+  &--primary:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--secondary {
     color: rgba(40, 54, 69, 0.1);
     border-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--secondary:hover {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--secondary:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #b5b9be;
+    border-color: #b5b9be;
   }
 }
