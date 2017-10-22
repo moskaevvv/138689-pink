@@ -103,7 +103,10 @@
   font-size: 0;
   width: 147px;
   height: 41px;
-  background: transparent url("../img/logo-pink-blue-mobile.svg") center center no-repeat;
+  background-color: transparent;
+  background-image: url("../img/logo-pink-blue-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100% 100%;
 }
 

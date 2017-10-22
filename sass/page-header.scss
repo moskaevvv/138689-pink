@@ -22,7 +22,10 @@
     font-size: 0;
     width: 75px;
     height: 23px;
-    background: transparent url("../img/logo-pink-white-mobile.svg") center center no-repeat;
+    background-color: transparent;
+    background-image: url("../img/logo-pink-white-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: 100% 100%;
   }
 
