@@ -4,7 +4,7 @@
   padding: 20px 0 0;
 
   &__tools {
-    margin: 40px auto 35px;
+    margin: 40px 0 35px;
     display: flex;
     font-size: 0;
     line-height: 0;
@@ -107,6 +107,18 @@
 .upload__slider-control:hover,
 .upload__slider-control:active {
   background-color: #d22856;
+}
+
+.upload__tool:first-child svg {
+  height: 48px;
+}
+
+.upload__tool:last-child svg {
+  height: 32px;
+}
+
+.upload__tool svg {
+  height: 48px;
 }
 
 

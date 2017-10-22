@@ -10,6 +10,7 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var del = require("del");
 var server = require("browser-sync").create();
+var run = require("run-sequence");
 
 gulp.task("style", function () {
   gulp.src("sass/style.scss")
@@ -67,4 +68,15 @@ gulp.task("serve", function () {
 
   gulp.watch("sass/**/*.scss", ["style"]);
   gulp.watch("*.html", ["html"]);
+});
+
+gulp.task("build", function (done) {
+  run(
+    "clean",
+    "copy",
+    "style",
+    "html",
+    "images",
+    done
+  );
 });
