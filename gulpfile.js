@@ -68,3 +68,14 @@ gulp.task("serve", function () {
   gulp.watch("sass/**/*.scss", ["style"]);
   gulp.watch("*.html", ["html"]);
 });
+
+gulp.task("build", function (done) {
+  run(
+    "clean",
+    "copy",
+    "style",
+    "html",
+    "images",
+    done
+  );
+});
