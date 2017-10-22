@@ -220,11 +220,92 @@
   margin-bottom: 0;
 }
 
+.form__modal {
+  position: fixed;
+  top: 50%;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+  padding: 45px 20px 50px;
+  z-index: 100;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 24px;
+  overflow: hidden;
+
+  .form__button {
+    margin: 0;
+  }
+
+  .form__modal-title {
+    font-size: 18px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    color: black;
+    margin-bottom: 30px;
+  }
+
+  .form__modal-paragraph {
+    font-size: 14px;
+    color: #283645;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.form__modal--done {
+  padding: 45px 0 0;
+  margin-top: calc( -374px / 2);
+
+  .form__button-wrapper {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+  }
+}
+
+.form__modal--error {
+  margin-top: calc( -300px / 2);
+}
+
 @media (min-width: 660px) {
   .form {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
+  }
+
+  .form__modal {
+    width: 460px;
+    border-radius: 3px;
+    left: 50%;
+    margin-left: -230px;
+    padding: 40px 80px 50px;
+
+    .form__modal-title {
+      font-size: 30px;
+      line-height: 40px;
+      max-width: 350px;
+      margin: 0 auto 30px;
+    }
+
+    .form__modal-paragraph {
+      font-size: 18px;
+      max-width: 350px;
+    }
+  }
+
+  .form__modal--done {
+    padding: 40px 0 0;
+    margin-top: calc( -450px / 2);
+
+    .form__button-wrapper {
+      background-color: #f2f2f2;
+      padding: 50px 80px;
+    }
+  }
+
+  .form__modal--error {
+    margin-top: calc( -375px / 2);
   }
 
   .form textarea {
@@ -387,6 +468,27 @@
     align-items: flex-end;
   }
 
+  .form__modal--done {
+    width: 780px;
+    padding: 40px 0 0;
+    margin-top: calc( -385px / 2);
+    margin-left: calc( -780px / 2);
+
+    .form__button-wrapper {
+      background-color: #f2f2f2;
+      padding: 50px 160px;
+    }
+
+    .form__modal-title,
+    .form__modal-paragraph,
+    .form__button {
+      width: 460px;
+      max-width: 460px;
+    }
+
+
+  }
+
   .form .form__section {
     width: 100%;
   }
@@ -451,4 +553,8 @@
   .form__section--button {
     margin-bottom: -5px;
   }
+}
+
+.form__section--emotions h2 {
+  display: none;
 }
