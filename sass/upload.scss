@@ -4,7 +4,7 @@
   padding: 20px 0 0;
 
   &__tools {
-    margin: 40px auto 35px;
+    margin: 40px 0 35px;
     display: flex;
     font-size: 0;
     line-height: 0;
@@ -107,6 +107,18 @@
 .upload__slider-control:hover,
 .upload__slider-control:active {
   background-color: #d22856;
+}
+
+.upload__tool:first-child svg {
+  height: 48px;
+}
+
+.upload__tool:last-child svg {
+  height: 32px;
+}
+
+.upload__tool svg {
+  height: 48px;
 }
 
 
@@ -231,6 +243,10 @@
     height: 16px;
     margin-left: 8px;
   }
+
+  .upload__tool {
+    padding-right: 33px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -263,19 +279,23 @@
     margin-right: 20px;
   }
 
-  .upload__tool svg {
-    height: auto;
-  }
-
   .upload__tool:first-child svg {
-    height: auto;
+    height: 48px;
   }
 
   .upload__tool:last-child svg {
-    height: auto;
+    height: 32px;
   }
 
   .upload__tools {
     width: 90px;
+  }
+
+  .upload__tool svg {
+    height: 48px;
+  }
+
+  .upload__tool {
+    padding-right: 37px;
   }
 }

@@ -50,6 +50,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+    width: 100%;
   }
 
   .testimonials__who {
@@ -104,4 +105,8 @@
     line-height: 30px;
     font-size: 24px;
   }
+}
+
+.testimonials__item--overflowed {
+  display: none;
 }

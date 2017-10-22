@@ -32,7 +32,7 @@
     background-color: #2aab6d;
     width: 100%;
     margin: 0 0 35px;
-    padding: 16px 0 17px;
+    padding: 16px 20px 17px;
     border-radius: 3px;
     cursor: pointer;
   }
@@ -67,6 +67,11 @@
   line-height: 0;
 }
 
+
+.form__section--app .form__subheader--centered {
+  margin-bottom: 20px;
+}
+
 .form__section {
   text-align: left;
   padding: 35px 20px 40px;
@@ -92,6 +97,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 15px 20px;
+  min-height: 64px;
 
   &:hover {
     border-color: #283645;
@@ -130,7 +136,7 @@
 }
 
 .form__input-wrapper--checkbox {
-  margin-bottom: 60px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 10px;
@@ -144,6 +150,7 @@
     display: inline-block;
     padding: 10px 70px;
     position: relative;
+    line-height: 30px;
   }
 
   label::before {
@@ -156,7 +163,7 @@
     box-sizing: border-box;
     border: 2px solid #e5e5e5;
     background-color: white;
-    top: -7px;
+    top: 6px;
     left: 0;
   }
 
@@ -186,17 +193,30 @@
     border-radius: 50%;
     background-color: #d22856;
     left: 12px;
-    top: 5px;
+    top: 18px;
   }
 }
 
 .form__checkbox-column {
   display: flex;
   flex-direction: column;
-  margin-bottom: 55px;
+  margin-bottom: 0;
 }
 
 .form__checkbox-column:last-child {
+  margin-bottom: 0;
+}
+
+.form__section--achivs .form__input-wrapper--checkbox {
+  margin-bottom: 27px;
+}
+
+
+.form__section--achivs .form__subheader--centered {
+  margin-bottom: 33px;
+}
+
+.form__checkbox-column:last-child .form__input-wrapper--checkbox:last-child {
   margin-bottom: 0;
 }
 
@@ -219,6 +239,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .form__section--app .form__input-wrapper--checkbox:last-child {
+    margin-bottom: 0;
   }
 
   .form__input-wrapper--name-input .form__textfield {
@@ -252,8 +276,12 @@
     padding: 0 20px;
     position: relative;
     z-index: 3;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     display: inline-block;
+  }
+
+  .form__section--achivs .form__subheader-bg {
+    margin-bottom: 0;
   }
 
   .form__section--contacts .form__subheader-bg {
@@ -346,18 +374,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-  .form__input-wrapper--checkbox {
-    margin-bottom: 55px;
-  }
-
-  .form__section--achivs .form__input-wrapper--checkbox {
-    margin-bottom: 58px;
-  }
-
-  .form__section--achivs .form__input-wrapper--checkbox:last-child {
-    margin-bottom: 10px;
-  }
 }
 
 @media (min-width: 960px) {
@@ -402,10 +418,6 @@
 
   .form__section--achivs h2 {
     padding-bottom: 15px;
-  }
-
-  .form__section--app .form__subheader-bg {
-    margin-bottom: 45px;
   }
 
   .form__section--app {
