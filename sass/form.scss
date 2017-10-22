@@ -200,7 +200,7 @@
 .form__checkbox-column {
   display: flex;
   flex-direction: column;
-  margin-bottom: 55px;
+  margin-bottom: 0;
 }
 
 .form__checkbox-column:last-child {
@@ -209,10 +209,6 @@
 
 .form__section--achivs .form__input-wrapper--checkbox {
   margin-bottom: 27px;
-}
-
-.form__checkbox-column {
-  margin-bottom: 0;
 }
 
 
