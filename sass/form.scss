@@ -51,6 +51,10 @@
   }
 }
 
+.form__section--contacts .form__subheader--section-title {
+  display: none;
+}
+
 .form__section--emotions .form__textfield {
   box-sizing: border-box;
   min-height: 200px;
@@ -69,7 +73,7 @@
 
 
 .form__section--app .form__subheader--centered {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form__section {
@@ -129,6 +133,8 @@
 }
 
 .form__section--emotions {
+  padding-bottom: 10px;
+
   .form__subheader {
     padding-left: 0;
     margin-bottom: 15px;
@@ -207,10 +213,13 @@
   margin-bottom: 0;
 }
 
+.form__section--achivs {
+  padding-bottom: 55px;
+}
+
 .form__section--achivs .form__input-wrapper--checkbox {
   margin-bottom: 27px;
 }
-
 
 .form__section--achivs .form__subheader--centered {
   margin-bottom: 33px;
@@ -304,6 +313,10 @@
     }
   }
 
+  .form__section--achivs {
+    padding-bottom: 40px;
+  }
+
   .form__modal--error {
     margin-top: calc(-375px / 2);
   }
@@ -344,8 +357,8 @@
     flex-direction: column;
   }
 
-  .form__section--bordered h2 {
-    margin: -21px auto 0;
+  .form__section--bordered .form__subheader--section-title {
+    margin: -21px auto 20px;
     padding: 10px;
     display: block;
     text-align: center;
@@ -362,11 +375,11 @@
   }
 
   .form__section--achivs .form__subheader-bg {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .form__section--contacts .form__subheader-bg {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .form__section--emotions .form__subheader-bg {
@@ -491,6 +504,14 @@
     width: 100%;
   }
 
+  .form__section--achivs .form__subheader-bg {
+    margin-bottom: 0;
+  }
+
+  .form__section--contacts .form__subheader-bg {
+    margin-bottom: 30px;
+  }
+
   .form .form__section:first-child,
   .form .form__section:nth-child(4), {
     width: calc((100% - 70px) / 2);
@@ -513,10 +534,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 55px;
+    padding-bottom: 30px;
   }
 
-  .form__section--achivs h2 {
+  .form__section--achivs .form__subheader--section-title {
     padding-bottom: 15px;
   }
 
@@ -528,7 +549,7 @@
     margin-left: 55px;
   }
 
-  .form__section--contacts h2 {
+  .form__section--contacts .form__subheader--section-title {
     box-sizing: border-box;
     margin-bottom: -5px;
   }
@@ -551,8 +572,4 @@
   .form__section--button {
     margin-bottom: -5px;
   }
-}
-
-.form__section--emotions h2 {
-  display: none;
 }
