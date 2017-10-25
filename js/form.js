@@ -5,9 +5,9 @@ var modalError = document.querySelector(".form__modal--error");
 var modalErorButton = modalError.querySelector("button");
 
 submitButton.onclick = function() {
-  modalError.classList.remove("visually-hidden");
+  modalError.classList.remove("hidden");
 };
 
 modalErorButton.onclick = function() {
-  modalError.classList.add("visually-hidden");
+  modalError.classList.add("hidden");
 }
