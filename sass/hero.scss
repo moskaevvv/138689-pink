@@ -10,6 +10,8 @@
 
   &__download-wrapper {
     padding: 28px 20px;
+    position: relative;
+    z-index: 20;
   }
 
   &__about-platforms {

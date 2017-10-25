@@ -15,6 +15,7 @@
 
 .triangle-edge--double::before {
   background-image: url("../img/bg-triangle-white-footer-my.svg");
+  z-index: 10;
 }
 
 @media (min-width: 960px) {
