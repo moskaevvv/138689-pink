@@ -81,7 +81,7 @@
         </section>
         <!--Достижения-->
         <section class="form__section form__section--gray form__section--bordered form__section--achivs" style="order: 3;">
-          <h2 class="form__subheader form__subheader--centered"><span class="form__subheader-bg">Ваши безбашенные достижения в путешествии</span></h2>
+          <h2 class="form__subheader form__subheader--centered form__subheader--section-title"><span class="form__subheader-bg">Ваши безбашенные достижения в путешествии</span></h2>
           <div class="form__checkbox-column">
             <div class="form__input-wrapper form__input-wrapper--checkbox">
               <input class="form__checkbox" type="checkbox" id="selfie" name="achivements" value="selfie" checked>
@@ -115,7 +115,7 @@
         </section>
         <!--Контакты-->
         <section class="form__section form__section--bordered form__section--contacts" style="order: 2;">
-          <h2 class="visually-hidden form__subheader"><span class="form__subheader-bg">Контактная информация</span></h2>
+          <h2 class="form__subheader form__subheader--section-title"><span class="form__subheader-bg">Контактная информация</span></h2>
           <div class="form__input-wrapper form__input-wrapper--phone">
             <label class="form__subheader" for="phone" style="order: 1;">Номер телефона</label>
             <input class="form__textfield form__textfield--phone" type="tel" id="phone" placeholder="Номер, пожалуйста" name="phone">
@@ -127,7 +127,7 @@
         </section>
         <!--Приложения-->
         <section class="form__section form__section--gray form__section--bordered form__section--app" style="order: 1;">
-          <h2 class="form__subheader form__subheader--centered"><span class="form__subheader-bg">C каким приложением путешествовали?</span></h2>
+          <h2 class="form__subheader form__subheader--centered form__subheader--section-title"><span class="form__subheader-bg">C каким приложением путешествовали?</span></h2>
           <div class="form__input-wrapper form__input-wrapper--checkbox">
             <input class="form__radio" type="radio" id="ios" name="app" value="ios" checked>
             <label class="form__label" for="ios">Pink для iOS</label>
@@ -150,7 +150,8 @@
           </div>
         </section>
         <div class="form__section form__section--button" style="order: 5;">
-          <input class="form__button form__button--submit-button" type="submit" value="Отправить форму">
+          <input class="rectangle-button rectangle-button--submit-button" type="submit" value="Отправить форму">
+          
           <p class="form__subheader">
             *<span class="form__subheader--blue"> — обязательные поля</span>
           </p>
@@ -197,6 +198,23 @@
             </a>
       </div>
     </footer>
+
+    <!--Поп-апы-->
+
+    <div class="modal modal--error modal--hidden">
+      <h3 class="modal__title">Что-то пошло не так!</h3>
+      <p class="modal__paragraph">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="rectangle-button modal__button modal__button--close">Ok</button>
+    </div>
+
+    <div class="modal modal--done modal--hidden">
+      <h3 class="modal__title">Ваша заявка отправлена</h3>
+      <p class="modal__paragraph">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal__button-wrapper">
+          <button class="rectangle-button modal__button modal__button--close">Закрыть окно</button>
+      </div>
+    </div>
+
     <script src="js/menu.js"></script>
     <script src="js/form.js"></script>
   </body>

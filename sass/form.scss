@@ -19,36 +19,10 @@
   &__subheader--blue {
     color: #283645;
   }
+}
 
-  &__button {
-    background: transparent;
-    border: none;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 30px;
-    color: white;
-    background-color: #2aab6d;
-    width: 100%;
-    margin: 0 0 35px;
-    padding: 16px 20px 17px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-
-  &__button:hover {
-    background-color: #1c9b5e;
-  }
-
-  &__button:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-
-  &__button:disabled {
-    background-color: #e5e5e5;
-    cursor: default;
-  }
+.form__section--contacts .form__subheader--section-title {
+  display: none;
 }
 
 .form__section--emotions .form__textfield {
@@ -69,7 +43,7 @@
 
 
 .form__section--app .form__subheader--centered {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form__section {
@@ -129,6 +103,8 @@
 }
 
 .form__section--emotions {
+  padding-bottom: 10px;
+
   .form__subheader {
     padding-left: 0;
     margin-bottom: 15px;
@@ -207,10 +183,13 @@
   margin-bottom: 0;
 }
 
+.form__section--achivs {
+  padding-bottom: 55px;
+}
+
 .form__section--achivs .form__input-wrapper--checkbox {
   margin-bottom: 27px;
 }
-
 
 .form__section--achivs .form__subheader--centered {
   margin-bottom: 33px;
@@ -274,38 +253,8 @@
     flex-direction: column;
   }
 
-  .form__modal {
-    width: 460px;
-    border-radius: 3px;
-    left: 50%;
-    margin-left: -230px;
-    padding: 40px 80px 50px;
-
-    .form__modal-title {
-      font-size: 30px;
-      line-height: 40px;
-      max-width: 350px;
-      margin: 0 auto 30px;
-    }
-
-    .form__modal-paragraph {
-      font-size: 18px;
-      max-width: 350px;
-    }
-  }
-
-  .form__modal--done {
-    padding: 40px 0 0;
-    margin-top: calc(-450px / 2);
-
-    .form__button-wrapper {
-      background-color: #f2f2f2;
-      padding: 50px 80px;
-    }
-  }
-
-  .form__modal--error {
-    margin-top: calc(-375px / 2);
+  .form__section--achivs {
+    padding-bottom: 40px;
   }
 
   .form textarea {
@@ -344,8 +293,8 @@
     flex-direction: column;
   }
 
-  .form__section--bordered h2 {
-    margin: -21px auto 0;
+  .form__section--bordered .form__subheader--section-title {
+    margin: -21px auto 20px;
     padding: 10px;
     display: block;
     text-align: center;
@@ -362,11 +311,11 @@
   }
 
   .form__section--achivs .form__subheader-bg {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .form__section--contacts .form__subheader-bg {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .form__section--emotions .form__subheader-bg {
@@ -420,11 +369,6 @@
     top: 0;
     z-index: 2;
     border-radius: 0 3px 3px 0;
-  }
-
-  .form__button {
-    margin: 15px 0 0;
-    width: 300px;
   }
 
   .form__section--contacts {
@@ -491,6 +435,14 @@
     width: 100%;
   }
 
+  .form__section--achivs .form__subheader-bg {
+    margin-bottom: 0;
+  }
+
+  .form__section--contacts .form__subheader-bg {
+    margin-bottom: 30px;
+  }
+
   .form .form__section:first-child,
   .form .form__section:nth-child(4), {
     width: calc((100% - 70px) / 2);
@@ -513,10 +465,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 55px;
+    padding-bottom: 30px;
   }
 
-  .form__section--achivs h2 {
+  .form__section--achivs .form__subheader--section-title {
     padding-bottom: 15px;
   }
 
@@ -528,7 +480,7 @@
     margin-left: 55px;
   }
 
-  .form__section--contacts h2 {
+  .form__section--contacts .form__subheader--section-title {
     box-sizing: border-box;
     margin-bottom: -5px;
   }

@@ -1,17 +1,14 @@
 "use strict";
 
-var submitButton = document.querySelector(".form__button--submit-button");
-var modalsLayout = document.querySelector(".form__modals");
-var modalDone = document.querySelector(".form__modal--done");
-var modalError = document.querySelector(".form__modal--error");
-var modalDoneButton = modalDone.querySelector("button");
-var modalErorButton = modalError.querySelector("button");
-var form = document.querySelector(form);
+var submitButton = document.querySelector(".rectangle-button--submit-button");
+var modalError = document.querySelector(".modal--error");
+var modalErorButton = modalError.querySelector(".modal__button--close");
 
 submitButton.onclick = function() {
-  modalsLayout.classList.remove("invisible");
+  modalError.classList.remove("modal--hidden");
 };
 
 modalErorButton.onclick = function() {
-  modalsLayout.classList.add("invisible");
+  modalError.classList.add("modal--hidden");
+
 }
