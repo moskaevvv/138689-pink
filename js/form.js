@@ -1,13 +1,13 @@
 "use strict";
 
-var submitButton = document.querySelector(".form__button--submit-button");
-var modalError = document.querySelector(".form__modal--error");
-var modalErorButton = modalError.querySelector("button");
+var submitButton = document.querySelector(".rectangle-button--submit-button");
+var modalError = document.querySelector(".modal--error");
+var modalErorButton = modalError.querySelector(".modal__button--close");
 
 submitButton.onclick = function() {
-  modalError.classList.remove("hidden");
+  modalError.classList.remove("modal--hidden");
 };
 
 modalErorButton.onclick = function() {
-  modalError.classList.add("hidden");
+  modalError.classList.add("modal--hidden");
 }

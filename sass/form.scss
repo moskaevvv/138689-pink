@@ -19,36 +19,6 @@
   &__subheader--blue {
     color: #283645;
   }
-
-  &__button {
-    background: transparent;
-    border: none;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 18px;
-    line-height: 30px;
-    color: white;
-    background-color: #2aab6d;
-    width: 100%;
-    margin: 0 0 35px;
-    padding: 16px 20px 17px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-
-  &__button:hover {
-    background-color: #1c9b5e;
-  }
-
-  &__button:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-
-  &__button:disabled {
-    background-color: #e5e5e5;
-    cursor: default;
-  }
 }
 
 .form__section--contacts .form__subheader--section-title {
@@ -229,53 +199,6 @@
   margin-bottom: 0;
 }
 
-.form__modal {
-  position: fixed;
-  top: 50%;
-  background-color: white;
-  width: 100%;
-  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
-  padding: 45px 20px 50px;
-  z-index: 100;
-  text-align: center;
-  box-sizing: border-box;
-  line-height: 24px;
-  overflow: hidden;
-
-  .form__button {
-    margin: 0;
-  }
-
-  .form__modal-title {
-    font-size: 18px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    color: black;
-    margin-bottom: 30px;
-  }
-
-  .form__modal-paragraph {
-    font-size: 14px;
-    color: #283645;
-    max-width: 400px;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-}
-
-.form__modal--done {
-  padding: 45px 0 0;
-  margin-top: calc(-374px / 2);
-
-  .form__button-wrapper {
-    background-color: #f2f2f2;
-    padding: 50px 20px;
-  }
-}
-
-.form__modal--error {
-  margin-top: calc(-300px / 2);
-}
-
 @media (min-width: 660px) {
   .form {
     padding: 0 20px;
@@ -283,42 +206,8 @@
     flex-direction: column;
   }
 
-  .form__modal {
-    width: 460px;
-    border-radius: 3px;
-    left: 50%;
-    margin-left: -230px;
-    padding: 40px 80px 50px;
-
-    .form__modal-title {
-      font-size: 30px;
-      line-height: 40px;
-      max-width: 350px;
-      margin: 0 auto 30px;
-    }
-
-    .form__modal-paragraph {
-      font-size: 18px;
-      max-width: 350px;
-    }
-  }
-
-  .form__modal--done {
-    padding: 40px 0 0;
-    margin-top: calc(-450px / 2);
-
-    .form__button-wrapper {
-      background-color: #f2f2f2;
-      padding: 50px 80px;
-    }
-  }
-
   .form__section--achivs {
     padding-bottom: 40px;
-  }
-
-  .form__modal--error {
-    margin-top: calc(-375px / 2);
   }
 
   .form textarea {
@@ -435,11 +324,6 @@
     border-radius: 0 3px 3px 0;
   }
 
-  .form__button {
-    margin: 15px 0 0;
-    width: 300px;
-  }
-
   .form__section--contacts {
     display: flex;
     flex-wrap: wrap;
@@ -479,25 +363,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-  }
-
-  .form__modal--done {
-    width: 780px;
-    padding: 40px 0 0;
-    margin-top: calc(-385px / 2);
-    margin-left: calc(-780px / 2);
-
-    .form__button-wrapper {
-      background-color: #f2f2f2;
-      padding: 50px 160px;
-    }
-
-    .form__modal-title,
-    .form__modal-paragraph,
-    .form__button {
-      width: 460px;
-      max-width: 460px;
-    }
   }
 
   .form .form__section {
