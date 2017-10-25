@@ -50,6 +50,10 @@ $retina-dppx: 1.5dppx;
   overflow: hidden;
 }
 
+.invisible {
+  display: none;
+}
+
 //fonts
 @font-face {
   font-family: "Open Sans";
