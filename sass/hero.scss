@@ -14,6 +14,11 @@
     z-index: 20;
   }
 
+  &__download-button {
+    display: block;
+    text-decoration: none;
+  }
+
   &__about-platforms {
     max-width: 250px;
     margin: auto;

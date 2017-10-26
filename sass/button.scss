@@ -12,6 +12,15 @@
   width: 100%;
   cursor: pointer;
 
+  &:hover {
+    background-color: white;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+
   &--primary {
     color: #d22856;
     border-color: #d22856;
@@ -30,11 +39,13 @@
   &--secondary {
     color: rgba(40, 54, 69, 0.1);
     border-color: rgba(40, 54, 69, 0.1);
+    background: transparent;
   }
 
   &--secondary:hover {
     color: rgba(40, 54, 69, 0.3);
     border-color: rgba(40, 54, 69, 0.3);
+    background: transparent;
   }
 
   &--secondary:active {
