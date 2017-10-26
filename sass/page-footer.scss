@@ -145,6 +145,7 @@
   top: 110px;
   left: 50%;
   margin-left: -13px;
+  z-index: 1;
 }
 
 .page-footer__academy-logo {
@@ -163,6 +164,17 @@
 
 .page-footer__academy:active svg {
   opacity: 0.3;
+}
+
+.page-footer__yandex-map {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.page-footer__yandex-map .ymaps_https___api_maps_yandex_ru_2_1_56_830973943801islands_circleDotIcon___1BAD03__1BAD03_27x27_1508961449634 {
+  background-image: url("../img/icon-map-marker.svg");
 }
 
 @media (min-width: 660px) {

@@ -10,5 +10,4 @@ submitButton.onclick = function() {
 
 modalErorButton.onclick = function() {
   modalError.classList.add("modal--hidden");
-
 }
